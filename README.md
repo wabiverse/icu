@@ -25,7 +25,7 @@
 
 </div>
 
-##### To use zlib in swift, add zlib as a package dependency in your project's Package.swift file.
+##### To use icu in swift, add icu as a package dependency in your project's Package.swift file.
 ```swift
 dependencies: [
   .package(url: "https://github.com/wabiverse/icu.git", from: "76.1.0"),
@@ -33,7 +33,7 @@ dependencies: [
 ```
 
 
-##### Then, for any target you'd like, add the zlib product as a target dependency, a complete example.
+##### Then, for any target you'd like, add the icu product as a target dependency, a complete example.
 ```swift
 // swift-tools-version: 5.10
 import PackageDescription

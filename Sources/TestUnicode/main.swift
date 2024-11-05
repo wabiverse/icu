@@ -3,10 +3,4 @@
 
 import icuuc
 
-@main
-struct TestUnicode {
-  static func main()
-  {
-    print("it works.")
-  }
-}
+print("it works.")

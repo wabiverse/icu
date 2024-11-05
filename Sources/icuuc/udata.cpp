@@ -641,7 +641,7 @@ U_NAMESPACE_END
  *      our common data.                                                *
  *                                                                      *
  *----------------------------------------------------------------------*/
-#if !defined(ICU_DATA_DIR_WINDOWS)
+#if 0
 // When using the Windows system data, we expect only a single data file.
 extern "C" const DataHeader U_DATA_API U_ICUDATA_ENTRY_POINT;
 #endif
@@ -692,7 +692,7 @@ openCommonData(const char *path,          /*  Path from OpenChoice?          */
             if(gCommonICUDataArray[commonDataIndex] != nullptr) {
                 return gCommonICUDataArray[commonDataIndex];
             }
-#if !defined(ICU_DATA_DIR_WINDOWS)
+#if 0
 // When using the Windows system data, we expect only a single data file.
             int32_t i;
             for(i = 0; i < commonDataIndex; ++i) {
@@ -717,7 +717,7 @@ openCommonData(const char *path,          /*  Path from OpenChoice?          */
             setCommonICUDataPointer(uprv_getICUData_conversion(), false, pErrorCode);
         }
         */
-#if !defined(ICU_DATA_DIR_WINDOWS)
+#if 0
 // When using the Windows system data, we expect only a single data file.
         setCommonICUDataPointer(&U_ICUDATA_ENTRY_POINT, false, pErrorCode);
         {

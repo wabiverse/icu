@@ -14,6 +14,10 @@
 #include <cstddef>
 #include <string_view>
 
+#if defined(_WIN32)
+# include <type_traits>
+#endif // defined(_WIN32)
+
 /**
  * \file
  * \brief C++ API: char16_t pointer wrappers with

@@ -50,6 +50,9 @@ let package = Package(
         .define("_ALLOW_COMPILER_AND_STL_VERSION_MISMATCH", .when(platforms: [.windows])),
         .define("_ALLOW_KEYWORD_MACROS", to: "1", .when(platforms: [.windows])),
         .define("static_assert(_conditional, ...)", to: "", .when(platforms: [.windows])),
+      ],
+      linkerSettings: [
+        .linkedLibrary("advapi32", .when(platforms: [.windows]))
       ]
     ),
 

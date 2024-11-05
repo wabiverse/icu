@@ -16,6 +16,7 @@
 
 #if defined(_WIN32)
 # include <type_traits>
+# include <__msvc_string_view.hpp>
 #endif // defined(_WIN32)
 
 /**
